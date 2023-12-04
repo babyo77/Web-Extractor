@@ -1,5 +1,7 @@
 const urlParams = new URLSearchParams(window.location.search);
 const rawDataParam = urlParams.get('data');
+
+console.log(JSON.parse(decodeURIComponent(rawDataParam)))
 let imgNo = document.querySelector('.imgNo');
 let SvgNo = document.querySelector('.SvgNo');
 let Total = document.querySelector('.Total');
@@ -13,7 +15,7 @@ function update(){
 }
 
 if (rawDataParam) {
-    const data = JSON.parse(rawDataParam);
+    const data = JSON.parse(decodeURIComponent(rawDataParam));
 
     console.log(data);
       

@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    font-family: 'Poppins', sans serif;
+    font-weight: 500;
+}
+body{
+    padding: 0 3rem;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.spin{
+    animation: spin 1.5s infinite linear;
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+.Font{
+    margin-left: 1rem;
+}
+ul{
+    margin-left: -2.6rem;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+    column-gap: .7rem;
+}
+li{
+    font-weight: 400;
+    background-color: rgb(47, 47, 47);
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+    padding: .3rem 1rem;
+    border-radius: 1rem;
+    list-style: none;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+nav button{
+    font-size: .9rem;
+    background-color: black;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+nav button:hover{
+    background-color: whitesmoke;
+    color: black;
+}
+li:hover{
+    transition: all .3s linear;
+    background-color: whitesmoke;
+    color: black;
+}
+
+body
+{
+  background-color:#f2f2f2;
+  font-family: 'RobotoDraft', 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+*
+{
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+h5
+{
+  margin:0px;
+  font-size:1.4em;
+  font-weight:700;
+}
+
+p
+{
+  font-size:12px;
+}
+
+a{
+text-decoration: none;
+color: black;
+}
+
+.property-card{
+    background-color: rgba(0, 0, 0, 0.432);
+  display:flex;
+  border-radius:16px;
+  overflow:hidden;
+  position:relative;
+  margin-bottom: 1rem;
+  -webkit-box-shadow:  15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
+  box-shadow:  15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
+}
+ .property-card img{
+    width: 100%;
+    object-fit: cover;
+   object-position: center;
+ }
+
+ .property-card button{
+    background-color: rgba(0, 0, 0, 0.619);
+    backdrop-filter: blur(10px);
+    color: white;
+    position: absolute;
+    bottom: 4%;
+    left: 1vw;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+ }
+
+ .property-card button:hover{
+    transition:  all .3s linear;
+  background-color: white;
+  color: black;
+ }
+button{
+    cursor: pointer;
+    border: none;
+    border-radius: 1rem;
+    padding: .3rem 1rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    transition: all .3s linear;
+}
+
+.Images{
+    margin-left: 1rem;
+}
+
+.Images nav{
+ justify-content: space-between;
+}
+
+.image-wrapper{
+    margin: 2rem auto;
+   column-count: 3;
+   gap: 1rem;
+    padding-bottom: 1.7rem;
+}
+
+@media(max-width:1200px){
+    .image-wrapper{
+        column-gap: 3.9vw;
+    }
+}

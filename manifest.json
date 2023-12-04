@@ -1,0 +1,29 @@
+{
+    "manifest_version": 3,
+    "name": "Web Extractor",
+    "description": "Extract Images,Fonts and Color Picker",
+    "version": "1.0",
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": [
+        "storage",
+        "activeTab",
+        "scripting",
+        "downloads",
+        "clipboardWrite"
+    ],
+    "action": {
+        "default_icon": "/images/logo.png",
+        "default_popup": "popup.html"
+    },
+    "icons": {
+        "180": "/images/61Msrdh4xtL-modified.png"
+    },
+    "content_scripts": [
+        {
+          "matches": ["<all_urls>"],
+          "js": ["worker/data.js"]
+        }
+      ]
+}
